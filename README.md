@@ -1,2 +1,2 @@
 # ESP32 Ethernet
- Esample File for Ethernet
+ Example File for Ethernet
