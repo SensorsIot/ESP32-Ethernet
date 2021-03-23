@@ -188,6 +188,8 @@ void setup()
 
   WiFi.onEvent(WiFiEvent);
   ETH.begin(ETH_ADDR, ETH_POWER_PIN, ETH_MDC_PIN, ETH_MDIO_PIN, ETH_TYPE, ETH_CLK_MODE);
+  //uncomment to set static ip, (ip address, gateway, subnetmask)
+  //ETH.config(IPAddress(192, 168, 0, 90),IPAddress(192, 168, 0, 1),IPAddress(255, 255, 255, 0));
 }
 
 void loop() {
