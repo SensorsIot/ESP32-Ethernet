@@ -139,7 +139,7 @@ void reconnect() {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
     if (mqttClient.connect(mqttClientName)) {
-      //if (mqttClient.connect(mqttClientName, mqttUsername, mqttPassword) { // if credentials is nedded
+    //if (mqttClient.connect(mqttClientName, mqttUsername, mqttPassword)) { // if credentials is nedded
       Serial.println("connected");
       // Once connected, publish an announcement...
       mqttClient.publish("random/test", "hello world");
